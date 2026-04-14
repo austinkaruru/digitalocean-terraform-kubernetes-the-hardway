@@ -11,9 +11,8 @@ variable "region" {
 }
 
 variable "public_key"{
-  description = "Public Key to be used on Droplets"
+  description = "Path to the SSH public key to be used on Droplets"
   type = string
-  sensitive = true
 }
 variable "droplet_sizes" {
   description = "Map of instance roles to DigitalOcean droplet size slugs"

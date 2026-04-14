@@ -9,7 +9,7 @@ terraform {
 
 resource "digitalocean_ssh_key" "ssh_key" {
   name       = "kthw-ssh-key"
-  public_key = var.public_key
+  public_key = file(var.public_key)
 }
 
 # The Jumpbox Droplet
