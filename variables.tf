@@ -10,6 +10,11 @@ variable "region" {
   default = "nyc3"
 }
 
+variable "public_key"{
+  description = "Public Key to be used on Droplets"
+  type = string
+  sensitive = true
+}
 variable "droplet_sizes" {
   description = "Map of instance roles to DigitalOcean droplet size slugs"
   type        = map(string)
