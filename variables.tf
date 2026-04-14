@@ -10,9 +10,9 @@ variable "region" {
   default = "nyc3"
 }
 
-variable "public_key"{
+variable "public_key" {
   description = "Path to the SSH public key to be used on Droplets"
-  type = string
+  type        = string
 }
 variable "droplet_sizes" {
   description = "Map of instance roles to DigitalOcean droplet size slugs"
