@@ -1,12 +1,3 @@
-terraform {
-  required_providers {
-    digitalocean = {
-      source  = "digitalocean/digitalocean"
-      version = "~> 2.0"
-    }
-  }
-}
-
 resource "digitalocean_ssh_key" "ssh_key" {
   name       = "kthw-ssh-key"
   public_key = file(var.public_key)
